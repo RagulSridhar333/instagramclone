@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+             *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       } 
+       
+       header{
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       .title{
+       padding-top: 7px;
+       }  
+       
+       .search{
+        
+        padding-top: 10px;
+       }
+       .search i{
+        
+        color: gray;
+        margin-left: 0;
+        font-size: 20px;
+       }
+        .search ::placeholder{
+        padding-left: 90px;
+       } 
+       .menu ul{
+        display: inline-block;
+       margin-top: 7px;
+    
+       }
+       .menu ul li{
+        float: left;
+        gap: 2px;
+        list-style: none;
+        height: 30px;
+       }
+       .menu ul li  a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 30px;
+        color: black;
+    
+       }
+       input{
+        height: 30px;
+        width: 250px;
+        border-radius: 10px;
+        outline: none;
+        border: 2px solid black;
+        padding: 10px;
+       }
+       .menu ul li  a:hover{
+        color:gray;
+
+       }
+       #bars{
+      height: 45px;
+      width: 45px;
+      border: none;
+      outline: none;
+      padding-top: 5px;
+      background: inherit;
+     }
+    #bars i {
+      font-size: 25px;
+      padding: 6px;
+    }
+    #bars i:hover{
+      background-color:rgb(219, 216, 216) ;
+    }
+    /* style for container */
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        justify-content:space-evenly;
+        height: 350px;
+        width: 500px;
+        margin: 34%;
+        margin-top: 100px;
+        border-radius: 10px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        
+    }
+    .one,.two{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        padding-left: 7px;
+        color: #fff;
+    }
+    .inputtxt{
+        height: 35px;
+        width: 300px;
+        outline: none;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px solid #fff;
+        background: inherit;
+        color: #FFF;
+    }
+   
+
+.btn{
+  display: block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 4px;
+  
+}
+
+.btn span{
+  position: relative;
+  z-index: 2;
+}
+
+.btn:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+
+
+.btn:hover:after{
+  width: 100%;
+  content: "LOG IN";
+  overflow: hidden;
+}
+#acc{
+  text-decoration: none;
+}
+.container{
+  background:linear-gradient(#ff003b , rgb(142, 92, 199))
+}
+.name{
+  background: #f09433; 
+   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #970e30 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    font-weight: bold;
+    font-size: 45px;
+  
+}
+@media screen and (max-width: 500px){
+ .container{
+   position: absolute;
+ left: -160px;
+ top: 0;
+   
+ }
+}
+    </style>
+</head>
+<body>
+    <header>
+      
+        <div class="name">
+          Instagram
+        </div>
+    </header>
+    <div class="container">
+        <div class="one">
+        <label for="emil">E-mail</label>
+         <input type="text"  name="" class="inputtxt" placeholder="Enter your mail ID">
+          <div class="demo"></div>
+        </div>
+         <div class="two">
+        <label for="password">Password</label>
+        <input type="password" class="inputtxt" placeholder="Enter your password">
+        </div>
+
+        <div class="wrapper" onclick="ragul()">
+            <a href="Instagram Clone.html" class="btn">log in</a>
+          </div>
+
+
+        <p>Don't have an account? <a href="#" id="acc">create account</a></p>
+    </div>
+   <script>
+    function ragul(){
+        alert("login succesfull")
+    }
+  
+   </script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   } 
+   
+   header{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+
+
+   }
+   .title{
+   padding-top: 7px; 
+   
+   background: #f09433; 
+   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #970e30 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+   /* background: linear-gradient(45deg, #b9232a 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
+   /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+   }  
+ 
+   .search{
+    
+    padding-top: 10px;
+   }
+   .search i{
+    
+    color: gray;
+    margin-left: 0;
+    font-size: 20px;
+   }
+    .search ::placeholder{
+    padding-left: 90px;
+   } 
+   .menu ul{
+    display: inline-block;
+   margin-top: 7px;
+
+   }
+   .menu ul li{
+    float: left;
+    gap: 2px;
+    list-style: none;
+    height: 30px;
+   }
+   .menu ul li  a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+
+   }
+   input{
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+    padding: 10px;
+   }
+   .menu ul li  a:hover{
+    color:gray;
+
+   }
+   /* end */
+ section{
+    height: 270px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+ }
+ section img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 140px;
+    margin-top: 35px;
+ }
+ .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 60px;
+ }
+ .container .top{
+   display: flex;
+   gap: 20px;
+ }
+ .container .txt{
+    display: flex;
+    gap: 20px;
+ }
+ .container .top button{
+    width: 100px;
+    border-radius: 3px;
+    border: none;
+    background-color: #4285F4;
+    color: white;
+ }
+ #btn{
+    height: auto;
+    width: 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: #4285F4;
+    color: white;
+}
+ .container .top a{
+    color: black;
+    padding-top: 5px;
+ }
+ .txt{
+    text-align: justify;
+ }
+ hr{
+    width: 1100px;
+    margin-left: 130px;
+ }
+ .select{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .select .post{
+    
+    margin: 8px;
+    color: black;
+
+ }
+ .select .tag{
+
+    margin: 6px;
+
+ }
+ .images{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 22px;
+    padding-left: 70px;
+   
+ }
+ .box{
+    height: 350px;
+    width: 350px;
+ }
+
+ .select .post a i{
+    text-decoration: none;
+   color: black;
+ }
+ .select .tag a i{
+    text-decoration: none;
+   color: black;
+ }
+ .select .post a i:hover,
+ .select .tag a i:hover{
+
+    border-bottom: 1px solid black;
+ }
+ .images .box.box1 img,
+ .images .box.box2 img,
+ .images .box.box3 img
+ {
+  height: 100%;
+  width: 100%;
+ }
+.like{
+  height: 40px;
+  width: 100%;
+  padding-left: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+ .like a {
+  font-size: 34px;
+  text-decoration: none;
+ padding-right: 5px;
+ }
+ .like a i{
+  color: black;
+ }
+ .count{
+  padding-left: 10px;
+  padding-top: 5px;
+ }
+ .like a i:hover{
+  color:red
+ }
+ #bars{
+  height: 45px;
+  width: 45px;
+  border: none;
+  outline: none;
+  padding-top: 5px;
+  background: inherit;
+  display:none ;
+ }
+#bars i {
+  font-size: 25px;
+  padding: 6px;
+}
+#bars i:hover{
+  background-color:rgb(219, 216, 216) ;
+}
+
+ nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  left: 0;
+
+
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 25px;
+ color: #4285F4;
+ margin-top: 25px;
+ 
+}
+nav ul li a:hover{
+ color: #970e30;
+border-bottom:  2px solid #970e30;
+}
+body{
+  position: relative;
+}
+
+nav{
+  height: 560px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+   z-index: 7;
+   padding-left: 0;
+   margin-left: 0px;
+   padding-top: 35px;
+   position: absolute;
+   top: 40px;
+    display:none;  
+   left: 0;
+   font-size: 15px;
+   background-color: #fff;
+  margin: 10px;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+}
+#bars{
+  z-index: 3;
+
+}
+#tagged{
+z-index: 3;
+
+} 
+
+.dropdown{
+   display: none;
+  position:absolute;
+  font-size: 30px;
+  height: 39px;
+  width: 150px;
+  color:#fff;
+ 
+ }
+ #logout{
+  position: relative;
+ }
+ 
+ .dropdown #out{
+background-color: grey;
+font-size: 20px;
+color: #fff;
+display: flex;
+justify-content:start ;
+margin-top: 6px;
+justify-content: space-evenly;
+
+ }  
+
+ 
+ 
+
+@media only screen and (max-width: 500px) {
+.menu{
+display:none ;
+}
+}
+@media only screen and (max-width: 500px) {
+#bars{
+display:list-item;
+}
+}
+
+@media screen and (max-width: 500px) {
+   header input[type=search] {
+     float: none;
+     text-align: left;
+     max-width: 100%;
+     margin-left: 30px;
+     display: none;
+   }
+}
+@media screen and (max-width: 500px){
+ .search{
+   position: absolute;
+    display: flex;
+    right: 0;
+ 
+   
+ }
+ @media screen and (max-width: 500px){
+  header{
+     display: inline block;
+     position: relative;
+     
+  }
+ }
+ @media screen and (max-width: 500px){
+   header #bars{
+      position: absolute;
+      left: 5px;
+      
+   }
+  }
+}
+@media screen and (max-width: 500px){
+   .title{
+      position: absolute;
+      left: 70px;
+   }
+  }
+ 
+@media screen and (max-width: 500px){
+   .images {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    
+   }
+}
+@media screen and (max-width: 500px){
+   section .container .para {
+      /* text-align: justify; */
+    padding-left: 20px;  
+   }
+}
+@media screen and (max-width: 500px){
+   section{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 210px;
+   }
+}
+@media screen and (max-width: 500px){
+   section .container{
+    align-items:center ;   
+    padding-top: 10px;
+    row-gap: 2px;
+   }
+}
+
+ @media screen and (min-width: 500px){
+    .search i {
+     display: none;
+}
+
+} 
+
+.search {
+   height: 50px;
+   padding-top: 15px;
+}
+@media screen and (max-width: 330px){
+   section .container {
+     padding-left: 130px;
+   }
+   section .container .para {
+     padding: 0;
+   }
+}
